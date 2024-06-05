@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Contact us</h1>
+
+
+    <form id="contactForm">
+        <div class="name-field">
+            <div class="single-name">
+                <h5  >First Name <span>*</span> </h5>
+                <input  type="text" class="name" required />
+            </div>
+            <div class="single-name">
+                <h5>Last Name <span>*</span> </h5>
+        <input   class="name" type="text" required />
+            </div>
+        </div>
+
+        <h5>Email Address <span>*</span> </h5>
+        <input  type="email" class="email" required/>
+        <h5>Query Type <span>*</span> </h5>
+        <div class="query">
+            
+        <div class="box">
+            <input  type="radio"  />
+            <label for="generalEnquiry">General Enquiry</label>
+        </div>
+        <div class="box">
+            <input  type="radio"  />
+            <label for="supportRequest">Support Request</label>
+        </div>
+        </div>
+        
+        <h5>Message <span>*</span> </h5>
+        
+        <textarea name="message" id="message" required></textarea>
+        <input  type="submit" value="Submit" class="submit" />
+
+    </form>
+</div>
+<script src="Script.js"></script>
+</body>
+</html>
